@@ -1,32 +1,36 @@
-/*  Estudo Java com Git para podermos fazer o versionamento deste código
-o intuito do Git neste código e mostrar minha evolução na linguagem Java
-Linguagem que na qual estou estudando e me aprofundando muito!
-
-*/
-
-// Estrutura
-// Início de Minha classe public
-
 package src;
 
 public class ApiJava {
-
     public static void main(String[] args) {
 
-        // Definir as variáveis que eu passei para possuir o dado que nao pode mudar
+        // Variáveis relacionadas a minha classe e NomeCompleto
+        final String primeiroNome = "João Vitor";
+        final String SegundoNome = "Stellet Rodrigues Novais";
 
-        final String Nome = "João Vitor";
-        final String Sobrenome = "Stellet Rodrigues Novais";
+        // Varáveis relacionadas a minha classe de mensagem de apoio
+        final String PrimeiraMensagem = "Tudo irá dar certo!! ";
+        final String SegundaMensagem = " Isso Tudo e Fruto do seu esforço, ";
+        final String TerceiraMensagem = "Vá em frente que você chegará lá!";
 
-        // Definir a variável com nome significativo parecido com o nome do metodo
-        String nomeCompleto = NomeCompleto(Nome, Sobrenome);
+        // VAMOS AJEITAR AS VARIÁVEIS E ALINHAR COM OS MÉTODOS =
+        String nomeCompleto = NomeCompleto(primeiroNome, SegundoNome);
+        String mensagemApoio = MensagemApoio(PrimeiraMensagem, SegundaMensagem, TerceiraMensagem);
 
+        // VAMOS COLOCAR O OUTPUT DESTA MINHA APLICAÇÃO
         System.out.println(nomeCompleto);
+        System.out.println(mensagemApoio);
 
     }
 
-    public static String NomeCompleto(String Nome, String Sobrenome) {
-        return Nome.concat(" ").concat(Sobrenome);
+    // CLASSE DE NOMECOMPLETO
+    public static String NomeCompleto(String primeiroNome, String SegundoNome) {
+        return primeiroNome.concat(" ").concat(SegundoNome);
     }
 
+    // CLASSE MENSAGEM DE APOIO
+    public static String MensagemApoio(String PrimeiraMensagem, String SegundaMensagem, String TerceiraMensagem) {
+
+        return PrimeiraMensagem.concat(" ").concat(SegundaMensagem).concat(TerceiraMensagem);
+
+    }
 }
