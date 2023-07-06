@@ -1,4 +1,4 @@
-package src;
+package sc;
 
 public class ApiJava {
     public static void main(String[] args) {

@@ -1,35 +1,46 @@
+// Projeto que vai me dar a entrada do meu usúario que ele vai colocar seu nome,
+// Entrada do usuário com nome, idade, e aonde mora
+// no final nos vamos dar o resultado completo desta entrada do usuário
+
 package src;
 
 import java.util.Scanner;
+
+import javax.sound.midi.SysexMessage;
 
 public class TreinoJava {
 
     public static void main(String[] args) {
 
-        // Vamos colocar um input da janela de comando a partir do Scanner;
-
+        // Vamos colocar a nossa ferramenta para nos retornar a entrada;
         Scanner input = new Scanner(System.in);
 
-        // Vou passar para as variáveis que vou usar mais a frente para calcularmos;
+        // Vamos passar as variáveis que vai ter em meu programa
+        String PrimeiroNome;
+        String SegundoNome;
 
-        int number1;
-        int number2;
-        int sum; // soma
+        // Vamos colocar agora a idade que o meu usuário vai colocar;
+        int idade;
 
-        // vamos fazer a entrada do usuário colocando o número;
+        // Vamos colocar o cep em que meu usuário esta morando;
+        // (CASO FOR UM PROGRAMA DE RASTREIO DO CORREIOS OU ALGO DESSE TIPO);
+        String Logradouro;
 
-        System.out.print("Tap a anything number for sum  : ");// entrada do meu usuário para poder somar;
-        number1 = input.nextInt(); // aqui o código ele vai entender que e para ele poder somar;
+        // Agora nos vamos colocar os inputs de nosso programa.
 
-        // Vamos fazer a outra entrada do usuário para poder somar com o outro número;
+        System.out.println("Coloque o seu primeiro nome: ");
+        PrimeiroNome = input.nextLine();
 
-        System.out.print("Tap another number for sum with last number : ");
-        number2 = input.nextInt();
+        System.out.println("  Otimo! Agora coloque o seu segundo nome :");
+        SegundoNome = input.nextLine();
 
-        // Agora vamos fazer a soma destes dois números colocados pelo usuário;
+        System.out.printf("  Maravilha! então seu nome e : %s %s, ", PrimeiroNome, SegundoNome);
 
-        sum = number1 + number2;
-        System.out.printf("That's is you results %d%n", sum);
+        System.out.println("  Quantos anos voce tem : ");
+        idade = input.nextInt();
+
+        System.out.printf("  Então voce tem %d anos ?", idade);
 
     }
-}// Fim do meu método
+
+}
