@@ -2,11 +2,9 @@
 // Entrada do usuário com nome, idade, e aonde mora
 // no final nos vamos dar o resultado completo desta entrada do usuário
 
-package src;
+package src.edu.joao.treinojava;
 
 import java.util.Scanner;
-
-import javax.sound.midi.SysexMessage;
 
 public class TreinoJava {
 
@@ -36,11 +34,16 @@ public class TreinoJava {
 
         System.out.printf("  Maravilha! então seu nome e : %s %s, ", PrimeiroNome, SegundoNome);
 
+        System.out.println("Digite seu cep: ");
+        Logradouro = input.nextLine();
+
         System.out.println("  Quantos anos voce tem : ");
         idade = input.nextInt();
-
-        System.out.printf("  Então voce tem %d anos ?", idade);
-
+        if (idade < 18) {
+            System.out.println("Não podemos concluir o seu cadastro!");
+        } else if (idade >= 18) {
+            System.out.println("Cadastro Feito com sucesso!");
+        }
     }
 
 }

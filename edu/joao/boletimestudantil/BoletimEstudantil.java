@@ -1,7 +1,7 @@
 // arquivo BoletimEstudantil.java
 // Um estudo para poder aprender else/if em java!
 
-package src;
+package src.edu.joao.boletimestudantil;
 
 import java.util.Scanner;
 

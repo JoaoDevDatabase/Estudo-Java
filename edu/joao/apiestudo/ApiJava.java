@@ -1,4 +1,4 @@
-package sc;
+package src.edu.joao.apiestudo;
 
 public class ApiJava {
     public static void main(String[] args) {
